@@ -18,6 +18,10 @@ import { ContactForm } from './Hooks/useState/ContactFrom.jsx';
 import { Challenge } from './Hooks/UseEffect/EffectChallenge.jsx';
 import { UseRefs } from './Hooks/UseRef/index.jsx';
 import { UseForward } from './Hooks/UseRef/useForward.jsx';
+import { ParentComponent } from './components/propDrilling.jsx';
+import { BioContext,BioProvider } from './Hooks/ContextAPI/index.jsx';
+import { Home } from './Hooks/ContextAPI/home.jsx';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -39,6 +43,12 @@ createRoot(document.getElementById('root')).render(
     {/* <ContactForm /> */}
     {/* <Challenge /> */}
     {/* <UseRefs /> */}
-    <UseForward />
+    {/* <UseForward /> */}
+    {/* <ParentComponent /> */}
+    <>
+    <BioProvider>
+       <Home />
+    </BioProvider>
+    </>
   </StrictMode>,
 )
