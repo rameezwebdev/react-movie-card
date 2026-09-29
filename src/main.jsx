@@ -16,6 +16,7 @@ import { RegistrationForm } from './Hooks/useState/Registration.jsx';
 import { LoginForm } from './Hooks/useState/LoginForm.jsx';
 import { ContactForm } from './Hooks/useState/ContactFrom.jsx';
 import { Challenge } from './Hooks/UseEffect/EffectChallenge.jsx';
+import { UseRefs } from './Hooks/UseRef/index.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -35,6 +36,7 @@ createRoot(document.getElementById('root')).render(
     {/* <RegistrationForm /> */}
     {/* <LoginForm /> */}
     {/* <ContactForm /> */}
-    <Challenge />
+    {/* <Challenge /> */}
+    <UseRefs />
   </StrictMode>,
 )
