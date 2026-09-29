@@ -17,6 +17,7 @@ import { LoginForm } from './Hooks/useState/LoginForm.jsx';
 import { ContactForm } from './Hooks/useState/ContactFrom.jsx';
 import { Challenge } from './Hooks/UseEffect/EffectChallenge.jsx';
 import { UseRefs } from './Hooks/UseRef/index.jsx';
+import { UseForward } from './Hooks/UseRef/useForward.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -37,6 +38,7 @@ createRoot(document.getElementById('root')).render(
     {/* <LoginForm /> */}
     {/* <ContactForm /> */}
     {/* <Challenge /> */}
-    <UseRefs />
+    {/* <UseRefs /> */}
+    <UseForward />
   </StrictMode>,
 )
