@@ -21,6 +21,7 @@ import { UseForward } from './Hooks/UseRef/useForward.jsx';
 import { ParentComponent } from './components/propDrilling.jsx';
 import { BioContext,BioProvider } from './Hooks/ContextAPI/index.jsx';
 import { Home } from './Hooks/ContextAPI/home.jsx';
+import { ThemeProvider, LightDark } from './Hooks/ContextAPI/DarkMode.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -45,10 +46,15 @@ createRoot(document.getElementById('root')).render(
     {/* <UseRefs /> */}
     {/* <UseForward /> */}
     {/* <ParentComponent /> */}
-    <>
+    {/* <>
     <BioProvider>
        <Home />
     </BioProvider>
+    </> */}
+    <>
+     <ThemeProvider>
+      <LightDark />
+     </ThemeProvider>
     </>
   </StrictMode>,
 )
