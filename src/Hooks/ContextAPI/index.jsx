@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, use } from "react";
 
 // step 01
 export const BioContext = createContext(); 
@@ -11,3 +11,10 @@ export const BioProvider = ({children}) => {
         {children}
         </BioContext.Provider>
 };
+
+// Custom Hook
+
+export const useCustomContext = (() => {
+    const context = use(BioContext);
+    return context;
+}); 
