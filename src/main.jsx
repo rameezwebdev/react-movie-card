@@ -22,7 +22,7 @@ import { ParentComponent } from './components/propDrilling.jsx';
 import { BioContext,BioProvider } from './Hooks/ContextAPI/index.jsx';
 import { Home } from './Hooks/ContextAPI/home.jsx';
 import { ThemeProvider, LightDark } from './Hooks/ContextAPI/DarkMode.jsx'
-
+import { Reducer } from './Hooks/UseReducer/index.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -51,10 +51,13 @@ createRoot(document.getElementById('root')).render(
        <Home />
     </BioProvider>
     </> */}
-    <>
+
+    {/* <>
      <ThemeProvider>
       <LightDark />
      </ThemeProvider>
-    </>
+    </> */}
+
+    <Reducer />
   </StrictMode>,
 )
