@@ -23,6 +23,9 @@ import { BioContext,BioProvider } from './Hooks/ContextAPI/index.jsx';
 import { Home } from './Hooks/ContextAPI/home.jsx';
 import { ThemeProvider, LightDark } from './Hooks/ContextAPI/DarkMode.jsx'
 import { Reducer } from './Hooks/UseReducer/index.jsx';
+import { ReactMemo } from './Hooks/Memo/ReactMemo.jsx';
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -58,6 +61,7 @@ createRoot(document.getElementById('root')).render(
      </ThemeProvider>
     </> */}
 
-    <Reducer />
+  {/* <Reducer /> */}
+  <ReactMemo />
   </StrictMode>,
 )
