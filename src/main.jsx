@@ -24,7 +24,7 @@ import { Home } from './Hooks/ContextAPI/home.jsx';
 import { ThemeProvider, LightDark } from './Hooks/ContextAPI/DarkMode.jsx'
 import { Reducer } from './Hooks/UseReducer/index.jsx';
 import { ReactMemo } from './Hooks/Memo/ReactMemo.jsx';
-
+import MemoParentComponent from './Hooks/Memo/UseMemo.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -62,6 +62,7 @@ createRoot(document.getElementById('root')).render(
     </> */}
 
   {/* <Reducer /> */}
-  <ReactMemo />
+  {/* <ReactMemo /> */}
+  <MemoParentComponent />
   </StrictMode>,
 )
